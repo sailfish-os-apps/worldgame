@@ -18,8 +18,7 @@ Page {
         anchors.fill: parent
         source: dMapPage.mappe
         Component.onCompleted: {
-            console.debug("dmapImage.width = " + width)
-            console.debug("dmapImage.height = " + height)
+            if (sourceSize.height > sourceSize.width) dMapPage.allowedOrientations = Orientation.Portrait
         }
     }
 }

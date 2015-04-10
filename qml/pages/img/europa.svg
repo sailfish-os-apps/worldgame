@@ -10,10 +10,10 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xml:space="preserve"
-   width="810"
-   height="675"
+   width="1620"
+   height="1350"
    style="fill-rule:evenodd"
-   viewBox="0 0 228.6 190.5"
+   viewBox="0 0 457.2 381"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
@@ -69,7 +69,7 @@
  </defs>
  <g
    id="Plan_x0020_1"
-   transform="translate(-9.7115,-9.8243)">
+   transform="matrix(1.9999996,0,0,1.9999996,-19.461496,-19.574218)">
   <metadata
    id="CorelCorpID_0Corel-Layer" />
   <rect
@@ -704,7 +704,7 @@
   </g>
   <polygon
    class="fil7 str3"
-   points="207.039,12.4597 232.167,12.4597 232.167,28.3886 207.039,28.3886 "
+   points="207.039,28.3886 207.039,12.4597 232.167,12.4597 232.167,28.3886 "
    id="polygon176"
    style="fill:#ffffff;fill-opacity:0.50196078;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-opacity:0.50196078" />
   <path
@@ -722,7 +722,7 @@
   <polygon
    id="12"
    class="fil8"
-   points="235.303,26.2517 235.053,26.2517 235.053,25.4893 235.303,25.4893 "
+   points="235.303,25.4893 235.303,26.2517 235.053,26.2517 235.053,25.4893 "
    style="fill:#000000;fill-rule:nonzero" />
   <path
    id="123"
@@ -751,7 +751,7 @@
   <polygon
    id="1234567"
    class="fil8"
-   points="235.909,18.2438 235.626,18.2438 235.626,17.9611 235.909,17.9611 "
+   points="235.909,17.9611 235.909,18.2438 235.626,18.2438 235.626,17.9611 "
    style="fill:#000000;fill-rule:nonzero" />
   <path
    id="12345678"
@@ -838,48 +838,48 @@
     <polygon
    id="_319194904"
    class="fil10 str0"
-   points="208.067,18.4186 212.65,18.4186 212.65,19.4102 208.067,19.4102 "
+   points="208.067,19.4102 208.067,18.4186 212.65,18.4186 212.65,19.4102 "
    style="fill:#c2c1c1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_319202776"
    class="fil11 str0"
-   points="212.65,18.4186 217.233,18.4186 217.233,19.4102 212.65,19.4102 "
+   points="212.65,19.4102 212.65,18.4186 217.233,18.4186 217.233,19.4102 "
    style="fill:#ffffff;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_319197304"
    class="fil10 str0"
-   points="217.233,18.4186 221.816,18.4186 221.816,19.4102 217.233,19.4102 "
+   points="217.233,19.4102 217.233,18.4186 221.816,18.4186 221.816,19.4102 "
    style="fill:#c2c1c1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_319198312"
    class="fil11 str0"
-   points="221.817,18.4186 226.4,18.4186 226.4,19.4102 221.817,19.4102 "
+   points="221.817,19.4102 221.817,18.4186 226.4,18.4186 226.4,19.4102 "
    style="fill:#ffffff;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_319194928"
    class="fil10 str0"
-   points="226.4,18.4186 230.983,18.4186 230.983,19.4102 226.4,19.4102 "
+   points="226.4,19.4102 226.4,18.4186 230.983,18.4186 230.983,19.4102 "
    style="fill:#c2c1c1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_319201360"
    class="fil11 str0"
-   points="222.743,21.408 230.074,21.408 230.074,22.3996 222.743,22.3996 "
+   points="222.743,22.3996 222.743,21.408 230.074,21.408 230.074,22.3996 "
    style="fill:#ffffff;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_319200304"
    class="fil10 str0"
-   points="215.413,21.408 222.744,21.408 222.744,22.3996 215.413,22.3996 "
+   points="215.413,22.3996 215.413,21.408 222.744,21.408 222.744,22.3996 "
    style="fill:#c2c1c1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_319193152"
    class="fil11 str0"
-   points="208.083,21.408 215.414,21.408 215.414,22.3996 208.083,22.3996 "
+   points="208.083,22.3996 208.083,21.408 215.414,21.408 215.414,22.3996 "
    style="fill:#ffffff;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
    </g>
   </g>
   <polygon
    class="fil12 str4"
-   points="10,10.1486 238.023,10.1486 238.023,200 10,200 "
+   points="10,200 10,10.1486 238.023,10.1486 238.023,200 "
    id="polygon211"
    style="fill:none;stroke:#000000;stroke-width:0.5" />
  </g>

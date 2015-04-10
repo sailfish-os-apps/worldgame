@@ -10,10 +10,10 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xml:space="preserve"
-   width="778"
-   height="672"
+   width="1556"
+   height="1344"
    style="fill-rule:evenodd"
-   viewBox="0 0 219.56889 189.65333"
+   viewBox="0 0 439.13778 379.30666"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
@@ -70,7 +70,7 @@
  </defs>
  <g
    id="Plan_x0020_1"
-   transform="translate(-9.943055,-10.029185)">
+   transform="matrix(2.0000007,0,0,2.0000007,-19.986062,-20.06999)">
   <metadata
    id="CorelCorpID_0Corel-Layer" />
   <rect
@@ -740,7 +740,7 @@
   </g>
   <polygon
    class="fil9 str3"
-   points="16.2492,12.592 38.7855,12.592 38.7855,28.521 16.2492,28.521 "
+   points="16.2492,28.521 16.2492,12.592 38.7855,12.592 38.7855,28.521 "
    id="polygon204"
    style="fill:#ffffff;fill-opacity:0.50196078;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-opacity:0.50196078" />
   <path
@@ -758,7 +758,7 @@
   <polygon
    id="12"
    class="fil10"
-   points="13.725,26.4227 13.4757,26.4227 13.4757,25.6603 13.725,25.6603 "
+   points="13.725,25.6603 13.725,26.4227 13.4757,26.4227 13.4757,25.6603 "
    style="fill:#000000;fill-rule:nonzero" />
   <path
    id="123"
@@ -787,7 +787,7 @@
   <polygon
    id="1234567"
    class="fil10"
-   points="14.3313,18.4148 14.0486,18.4148 14.0486,18.1321 14.3313,18.1321 "
+   points="14.3313,18.1321 14.3313,18.4148 14.0486,18.4148 14.0486,18.1321 "
    style="fill:#000000;fill-rule:nonzero" />
   <path
    id="12345678"
@@ -814,42 +814,42 @@
     <polygon
    id="_313123624"
    class="fil11 str0"
-   points="17.6846,18.5412 21.6033,18.5412 21.6033,19.5328 17.6846,19.5328 "
+   points="17.6846,19.5328 17.6846,18.5412 21.6033,18.5412 21.6033,19.5328 "
    style="fill:#c2c1c1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_313131208"
    class="fil12 str0"
-   points="21.6033,18.5412 25.522,18.5412 25.522,19.5328 21.6033,19.5328 "
+   points="21.6033,19.5328 21.6033,18.5412 25.522,18.5412 25.522,19.5328 "
    style="fill:#ffffff;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_313131856"
    class="fil11 str0"
-   points="25.5219,18.5412 29.4406,18.5412 29.4406,19.5328 25.5219,19.5328 "
+   points="25.5219,19.5328 25.5219,18.5412 29.4406,18.5412 29.4406,19.5328 "
    style="fill:#c2c1c1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_313131040"
    class="fil12 str0"
-   points="29.4415,18.5412 33.3602,18.5412 33.3602,19.5328 29.4415,19.5328 "
+   points="29.4415,19.5328 29.4415,18.5412 33.3602,18.5412 33.3602,19.5328 "
    style="fill:#ffffff;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_313131736"
    class="fil11 str0"
-   points="33.3603,18.5412 37.279,18.5412 37.279,19.5328 33.3603,19.5328 "
+   points="33.3603,19.5328 33.3603,18.5412 37.279,18.5412 37.279,19.5328 "
    style="fill:#c2c1c1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_313125832"
    class="fil12 str0"
-   points="30.2333,21.5306 36.5009,21.5306 36.5009,22.5222 30.2333,22.5222 "
+   points="30.2333,22.5222 30.2333,21.5306 36.5009,21.5306 36.5009,22.5222 "
    style="fill:#ffffff;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_313125712"
    class="fil11 str0"
-   points="23.9658,21.5306 30.2334,21.5306 30.2334,22.5222 23.9658,22.5222 "
+   points="23.9658,22.5222 23.9658,21.5306 30.2334,21.5306 30.2334,22.5222 "
    style="fill:#c2c1c1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
     <polygon
    id="_313128040"
    class="fil12 str0"
-   points="17.6983,21.5306 23.9659,21.5306 23.9659,22.5222 17.6983,22.5222 "
+   points="17.6983,22.5222 17.6983,21.5306 23.9659,21.5306 23.9659,22.5222 "
    style="fill:#ffffff;fill-rule:nonzero;stroke:#000000;stroke-width:0.1" />
    </g>
    <path
@@ -921,7 +921,7 @@
   </g>
   <polygon
    class="fil8 str4"
-   points="10.293,10.2677 229.162,10.2677 229.162,199.444 10.293,199.444 "
+   points="10.293,199.444 10.293,10.2677 229.162,10.2677 229.162,199.444 "
    id="polygon240"
    style="fill:none;stroke:#000000;stroke-width:0.5" />
  </g>
