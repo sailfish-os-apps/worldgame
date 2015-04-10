@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-worldgame
+Exec=harbour-worldgame
+Name=harbour-worldgame
+# translation example:
+# your app name in German locale (de)
+Name[de]=harbour-worldgame
+
