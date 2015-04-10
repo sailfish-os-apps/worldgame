@@ -73,7 +73,7 @@ Page {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: "<a href=\"https://github.com/llelectronics/worldgame\">Sourcecode on Github</a>"
                 onClicked: {
-                    mainWindow.openNewTab('page-'+salt(), "https://github.com/llelectronics/worldgame", false);
+                    Qt.openUrlExternally("https://github.com/llelectronics/worldgame");
                 }
             }
 
