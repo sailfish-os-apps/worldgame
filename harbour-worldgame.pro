@@ -24,7 +24,9 @@ OTHER_FILES += qml/harbour-worldgame.qml \
     translations/*.ts \
     harbour-worldgame.desktop \
     qml/pages/MainMenu.qml \
-    qml/pages/AboutPage.qml
+    qml/pages/AboutPage.qml \
+    qml/pages/worldmap.qml \
+    qml/pages/dMap.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
