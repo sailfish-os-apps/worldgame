@@ -83,4 +83,7 @@ Page {
             pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/australien.svg"})
         }
     }
+    Toolbar {
+    z: 99
+    }
 }

@@ -26,7 +26,8 @@ OTHER_FILES += qml/harbour-worldgame.qml \
     qml/pages/MainMenu.qml \
     qml/pages/AboutPage.qml \
     qml/pages/worldmap.qml \
-    qml/pages/dMap.qml
+    qml/pages/dMap.qml \
+    qml/pages/Toolbar.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

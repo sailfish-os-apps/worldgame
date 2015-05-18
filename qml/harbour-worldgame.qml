@@ -34,9 +34,12 @@ import "pages"
 
 ApplicationWindow
 {
+    id: mainWindow
     property string version: "0.1"
     property string appname: "World Game"
     property string appicon: "icon.png"
+
+    property int lp: 3
 
     initialPage: Component { MainMenu { } }
     cover: undefined
