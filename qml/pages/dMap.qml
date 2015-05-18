@@ -17,6 +17,8 @@ Page {
         anchors.centerIn: parent
         anchors.fill: parent
         source: dMapPage.mappe
+        //fillMode: Image.PreserveAspectFit // Giving me headaches
+        smooth: true
         Component.onCompleted: {
             if (sourceSize.height > sourceSize.width) dMapPage.allowedOrientations = Orientation.Portrait
         }
@@ -27,8 +29,8 @@ Page {
             id: wnArea
             anchors.top: parent.top
             anchors.left: parent.left
-            height: (dMapPage.height * 0.33)
-            width: (dMapPage.width * 0.33)
+            height: (dMapImage.paintedHeight * 0.33)
+            width: (dMapImage.paintedWidth * 0.33)
             color: "transparent"
             MouseArea {
                 anchors.fill: parent
@@ -41,17 +43,17 @@ Page {
         }
         Rectangle {
             id: vline1
-            height: dMapPage.height
+            height: dMapImage.paintedHeight
             width: 4
             color: Theme.primaryColor // TODO: Maybe something fancier
-            x: (dMapPage.width * 0.33) + (width/2)
+            x: (dMapImage.paintedWidth * 0.33) + (width/2)
         }
         Rectangle {
             id: mnArea
             anchors.top: parent.top
             anchors.left: vline1.right
-            height: (dMapPage.height * 0.33)
-            width: (dMapPage.width * 0.33)
+            height: (dMapImage.paintedHeight * 0.33)
+            width: (dMapImage.paintedWidth * 0.33)
             color: "transparent"
             MouseArea {
                 anchors.fill: parent
@@ -64,17 +66,17 @@ Page {
         }
         Rectangle {
             id: vline2
-            height: dMapPage.height
+            height: dMapImage.paintedHeight
             width: 4
             color: Theme.primaryColor // TODO: Maybe something fancier
-            x: (dMapPage.width * 0.66) + (width/2)
+            x: (dMapImage.paintedWidth * 0.66) + (width/2)
         }
         Rectangle {
             id: enArea
             anchors.top: parent.top
             anchors.left: vline2.right
-            height: (dMapPage.height * 0.33)
-            width: (dMapPage.width * 0.33)
+            height: (dMapImage.paintedHeight * 0.33)
+            width: (dMapImage.paintedWidth * 0.33)
             color: "transparent"
             MouseArea {
                 anchors.fill: parent
@@ -88,16 +90,16 @@ Page {
         Rectangle {
             id: hline1
             height: 4
-            width: dMapPage.width
+            width: dMapImage.paintedWidth
             color: Theme.primaryColor // TODO: Maybe something fancier
-            y: (dMapPage.height * 0.33) + (height/2)
+            y: (dMapImage.paintedHeight * 0.33) + (height/2)
         }
         Rectangle {
             id: wmArea
             anchors.top: hline1.bottom
             anchors.left: parent.left
-            height: (dMapPage.height * 0.33)
-            width: (dMapPage.width * 0.33)
+            height: (dMapImage.paintedHeight * 0.33)
+            width: (dMapImage.paintedWidth * 0.33)
             color: "transparent"
             MouseArea {
                 anchors.fill: parent
@@ -112,8 +114,8 @@ Page {
             id: mmArea
             anchors.top: hline1.bottom
             anchors.left: vline1.right
-            height: (dMapPage.height * 0.33)
-            width: (dMapPage.width * 0.33)
+            height: (dMapImage.paintedHeight * 0.33)
+            width: (dMapImage.paintedWidth * 0.33)
             color: "transparent"
             MouseArea {
                 anchors.fill:parent
@@ -128,8 +130,8 @@ Page {
             id: emArea
             anchors.top: hline1.bottom
             anchors.left: vline2.right
-            height: (dMapPage.height * 0.33)
-            width: (dMapPage.width * 0.33)
+            height: (dMapImage.paintedHeight * 0.33)
+            width: (dMapImage.paintedWidth * 0.33)
             color: "transparent"
             MouseArea {
                 anchors.fill: parent
@@ -143,16 +145,16 @@ Page {
         Rectangle {
             id: hline2
             height: 4
-            width: dMapPage.width
+            width: dMapImage.paintedWidth
             color: Theme.primaryColor // TODO: Maybe something fancier
-            y: (dMapPage.height * 0.66) + (height+2)
+            y: (dMapImage.paintedHeight * 0.66) + (height+2)
         }
         Rectangle {
             id: wsArea
             anchors.top: hline2.bottom
             anchors.left: parent.left
-            height: (dMapPage.height * 0.33)
-            width: (dMapPage.width * 0.33)
+            height: (dMapImage.paintedHeight * 0.33)
+            width: (dMapImage.paintedWidth * 0.33)
             color: "transparent"
             MouseArea {
                 anchors.fill: parent
@@ -167,8 +169,8 @@ Page {
             id: msArea
             anchors.top: hline2.bottom
             anchors.left: vline1.right
-            height: (dMapPage.height * 0.33)
-            width: (dMapPage.width * 0.33)
+            height: (dMapImage.paintedHeight * 0.33)
+            width: (dMapImage.paintedWidth * 0.33)
             color: "transparent"
             MouseArea {
                 anchors.fill: parent
@@ -183,8 +185,8 @@ Page {
             id: esArea
             anchors.top: hline2.bottom
             anchors.left: vline2.right
-            height: (dMapPage.height * 0.33)
-            width: (dMapPage.width * 0.33)
+            height: (dMapImage.paintedHeight * 0.33)
+            width: (dMapImage.paintedWidth * 0.33)
             color: "transparent"
             MouseArea {
                 anchors.fill: parent
@@ -235,7 +237,7 @@ Page {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    console.debug("b clicked")
+                    console.debug("B clicked")
                 }
             }
         }
@@ -256,7 +258,7 @@ Page {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    console.debug("c clicked")
+                    console.debug("C clicked")
                 }
             }
         }
@@ -270,7 +272,7 @@ Page {
             MouseArea {
                 anchors.fill:parent
                 onClicked: {
-                    console.debug("d clicked")
+                    console.debug("D clicked")
                 }
             }
         }
