@@ -34,6 +34,8 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     console.debug("West North clicked")
+                    grid2.visible = true ;
+                    grid2.parent = wnArea ;
                 }
             }
         }
@@ -55,6 +57,8 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     console.debug("Middle North clicked")
+                    grid2.visible = true ;
+                    grid2.parent = mnArea ;
                 }
             }
         }
@@ -76,6 +80,8 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     console.debug("East North clicked")
+                    grid2.visible = true ;
+                    grid2.parent = enArea ;
                 }
             }
         }
@@ -97,6 +103,8 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     console.debug("West Middle clicked")
+                    grid2.visible = true ;
+                    grid2.parent = wmArea ;
                 }
             }
         }
@@ -111,6 +119,8 @@ Page {
                 anchors.fill:parent
                 onClicked: {
                     console.debug("Middle Middle clicked")
+                    grid2.visible = true ;
+                    grid2.parent = mmArea ;
                 }
             }
         }
@@ -125,6 +135,8 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     console.debug("East Middle clicked")
+                    grid2.visible = true ;
+                    grid2.parent = emArea ;
                 }
             }
         }
@@ -146,6 +158,8 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     console.debug("West South clicked")
+                    grid2.visible = true ;
+                    grid2.parent = wsArea ;
                 }
             }
         }
@@ -160,6 +174,8 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     console.debug("Middle South clicked")
+                    grid2.visible = true ;
+                    grid2.parent = msArea ;
                 }
             }
         }
@@ -174,8 +190,91 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     console.debug("East South clicked")
+                    grid2.visible = true ;
+                    grid2.parent = esArea ;
                 }
             }
         }
     }
+
+
+
+    Item {
+        id: grid2
+        visible: false
+        height: parent.height
+        width: parent.width
+        Rectangle {
+            id: aArea
+            anchors.top: parent.top
+            anchors.left: parent.left
+            height: (parent.height * 0.5)
+            width: (parent.width * 0.5)
+            color: "transparent"
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    console.debug("A clicked")
+                }
+            }
+        }
+        Rectangle {
+            id: vline11
+            height: parent.height
+            width: 4
+            color: Theme.primaryColor // TODO: Maybe something fancier
+            x: (parent.width * 0.5) + (width/2)
+        }
+        Rectangle {
+            id: bArea
+            anchors.top: parent.top
+            anchors.left: vline11.right
+            height: (parent.height * 0.33)
+            width: (parent.width * 0.33)
+            color: "transparent"
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    console.debug("b clicked")
+                }
+            }
+        }
+        Rectangle {
+            id: hline11
+            height: 4
+            width: parent.width
+            color: Theme.primaryColor // TODO: Maybe something fancier
+            y: (parent.height * 0.5) + (height/2)
+        }
+        Rectangle {
+            id: cArea
+            anchors.top: hline11.bottom
+            anchors.left: parent.left
+            height: (parent.height * 0.5)
+            width: (parent.width * 0.5)
+            color: "transparent"
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    console.debug("c clicked")
+                }
+            }
+        }
+        Rectangle {
+            id: dArea
+            anchors.top: hline11.bottom
+            anchors.left: vline11.right
+            height: (parent.height * 0.5)
+            width: (parent.width * 0.5)
+            color: "transparent"
+            MouseArea {
+                anchors.fill:parent
+                onClicked: {
+                    console.debug("d clicked")
+                }
+            }
+        }
+    }
+
+
 }
