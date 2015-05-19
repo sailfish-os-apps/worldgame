@@ -40,6 +40,7 @@ ApplicationWindow
     property string appicon: "icon.png"
 
     property int lp: 3
+    property string cityName: "Foobar"
 
     initialPage: Component { MainMenu { } }
     cover: undefined

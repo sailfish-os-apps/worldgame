@@ -221,8 +221,10 @@ Page {
             bArea.border.width = 0
             cArea.border.width = 0
             dArea.border.width = 0
-            obj.border.color = "yellow"
-            obj.border.width = 4
+            if (obj != undefined) {
+                obj.border.color = "yellow"
+                obj.border.width = 4
+            }
         }
 
         Rectangle {
@@ -301,5 +303,11 @@ Page {
         }
     }
 
+    Toolbar {
+        actionButtons: true
+
+        onAbortClicked: console.debug("Abort clicked")
+        onApplyClicked: console.debug("Apply clicked")
+    }
 
 }
