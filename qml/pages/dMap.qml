@@ -38,6 +38,7 @@ Page {
                     console.debug("West North clicked")
                     grid2.visible = true ;
                     grid2.parent = wnArea ;
+                    grid2.markField(undefined)
                 }
             }
         }
@@ -61,6 +62,7 @@ Page {
                     console.debug("Middle North clicked")
                     grid2.visible = true ;
                     grid2.parent = mnArea ;
+                    grid2.markField(undefined)
                 }
             }
         }
@@ -84,6 +86,7 @@ Page {
                     console.debug("East North clicked")
                     grid2.visible = true ;
                     grid2.parent = enArea ;
+                    grid2.markField(undefined)
                 }
             }
         }
@@ -107,6 +110,7 @@ Page {
                     console.debug("West Middle clicked")
                     grid2.visible = true ;
                     grid2.parent = wmArea ;
+                    grid2.markField(undefined)
                 }
             }
         }
@@ -123,6 +127,7 @@ Page {
                     console.debug("Middle Middle clicked")
                     grid2.visible = true ;
                     grid2.parent = mmArea ;
+                    grid2.markField(undefined)
                 }
             }
         }
@@ -139,6 +144,7 @@ Page {
                     console.debug("East Middle clicked")
                     grid2.visible = true ;
                     grid2.parent = emArea ;
+                    grid2.markField(undefined)
                 }
             }
         }
@@ -162,6 +168,7 @@ Page {
                     console.debug("West South clicked")
                     grid2.visible = true ;
                     grid2.parent = wsArea ;
+                    grid2.markField(undefined)
                 }
             }
         }
@@ -178,6 +185,7 @@ Page {
                     console.debug("Middle South clicked")
                     grid2.visible = true ;
                     grid2.parent = msArea ;
+                    grid2.markField(undefined)
                 }
             }
         }
@@ -194,6 +202,7 @@ Page {
                     console.debug("East South clicked")
                     grid2.visible = true ;
                     grid2.parent = esArea ;
+                    grid2.markField(undefined)
                 }
             }
         }
@@ -206,6 +215,16 @@ Page {
         visible: false
         height: parent.height
         width: parent.width
+
+        function markField(obj) {
+            aArea.border.width = 0
+            bArea.border.width = 0
+            cArea.border.width = 0
+            dArea.border.width = 0
+            obj.border.color = "yellow"
+            obj.border.width = 4
+        }
+
         Rectangle {
             id: aArea
             anchors.top: parent.top
@@ -217,6 +236,7 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     console.debug("A clicked")
+                    grid2.markField(aArea)
                 }
             }
         }
@@ -231,13 +251,14 @@ Page {
             id: bArea
             anchors.top: parent.top
             anchors.left: vline11.right
-            height: (parent.height * 0.33)
-            width: (parent.width * 0.33)
+            height: (parent.height * 0.5)
+            width: (parent.width * 0.5)
             color: "transparent"
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
                     console.debug("B clicked")
+                    grid2.markField(bArea)
                 }
             }
         }
@@ -259,6 +280,7 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     console.debug("C clicked")
+                    grid2.markField(cArea)
                 }
             }
         }
@@ -273,6 +295,7 @@ Page {
                 anchors.fill:parent
                 onClicked: {
                     console.debug("D clicked")
+                    grid2.markField(dArea)
                 }
             }
         }

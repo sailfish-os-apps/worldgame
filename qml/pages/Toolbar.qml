@@ -17,6 +17,7 @@ Item {
         anchors.centerIn: bar
         font.pixelSize: Theme.fontSizeLarge
         color: "white"
+        text: "Foobar"
     }
     Row {
         anchors.top: parent.top
