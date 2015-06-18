@@ -1,10 +1,15 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "dataBase.js" as Db
 
 Page {
     id: dMapPage
     allowedOrientations: Orientation.Landscape
     property string mappe
+
+    property string markedCont
+    property string markedCompassCord
+    property string markedAreaCord
 
     Rectangle {
         id: ocean
@@ -39,6 +44,7 @@ Page {
                     grid2.visible = true ;
                     grid2.parent = wnArea ;
                     grid2.markField(undefined)
+                    markedCompassCord = "WN"
                 }
             }
         }
@@ -63,6 +69,7 @@ Page {
                     grid2.visible = true ;
                     grid2.parent = mnArea ;
                     grid2.markField(undefined)
+                    markedCompassCord = "MN"
                 }
             }
         }
@@ -87,6 +94,7 @@ Page {
                     grid2.visible = true ;
                     grid2.parent = enArea ;
                     grid2.markField(undefined)
+                    markedCompassCord = "EN"
                 }
             }
         }
@@ -111,6 +119,7 @@ Page {
                     grid2.visible = true ;
                     grid2.parent = wmArea ;
                     grid2.markField(undefined)
+                    markedCompassCord = "WM"
                 }
             }
         }
@@ -128,6 +137,7 @@ Page {
                     grid2.visible = true ;
                     grid2.parent = mmArea ;
                     grid2.markField(undefined)
+                    markedCompassCord = "MM"
                 }
             }
         }
@@ -145,6 +155,7 @@ Page {
                     grid2.visible = true ;
                     grid2.parent = emArea ;
                     grid2.markField(undefined)
+                    markedCompassCord = "EM"
                 }
             }
         }
@@ -169,6 +180,7 @@ Page {
                     grid2.visible = true ;
                     grid2.parent = wsArea ;
                     grid2.markField(undefined)
+                    markedCompassCord = "WS"
                 }
             }
         }
@@ -186,6 +198,7 @@ Page {
                     grid2.visible = true ;
                     grid2.parent = msArea ;
                     grid2.markField(undefined)
+                    markedCompassCord = "MS"
                 }
             }
         }
@@ -203,6 +216,7 @@ Page {
                     grid2.visible = true ;
                     grid2.parent = esArea ;
                     grid2.markField(undefined)
+                    markedCompassCord = "ES"
                 }
             }
         }
@@ -239,6 +253,7 @@ Page {
                 onClicked: {
                     console.debug("A clicked")
                     grid2.markField(aArea)
+                    markedAreaCord = "A"
                 }
             }
         }
@@ -261,6 +276,7 @@ Page {
                 onClicked: {
                     console.debug("B clicked")
                     grid2.markField(bArea)
+                    markedAreaCord = "B"
                 }
             }
         }
@@ -283,6 +299,7 @@ Page {
                 onClicked: {
                     console.debug("C clicked")
                     grid2.markField(cArea)
+                    markedAreaCord = "C"
                 }
             }
         }
@@ -298,6 +315,7 @@ Page {
                 onClicked: {
                     console.debug("D clicked")
                     grid2.markField(dArea)
+                    markedAreaCord = "D"
                 }
             }
         }
@@ -307,7 +325,10 @@ Page {
         actionButtons: true
 
         onAbortClicked: console.debug("Abort clicked")
-        onApplyClicked: console.debug("Apply clicked")
+        onApplyClicked: {
+            console.debug("Apply clicked")
+            Db.checkCoordinates("countries", "France", markedCont, markedCompassCord+markedAreaCord);
+        }
     }
 
 }

@@ -25,7 +25,7 @@ Page {
         height: worldImage.height * 0.48
         onClicked: {
             console.log("North America clicked")
-            pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/amnord.svg"})
+            pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/amnord.svg", "markedCont": "NorthAmerica"})
         }
     }
     MouseArea {
@@ -36,7 +36,7 @@ Page {
         height: worldImage.height - nordamArea.height
         onClicked: {
             console.log("South America clicked")
-            pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/amsud.svg"})
+            pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/amsud.svg", "markedCont": "SouthAmerica"})
         }
     }
     MouseArea {
@@ -47,7 +47,7 @@ Page {
         height: worldImage.height * 0.33
         onClicked: {
             console.log("Europe clicked")
-            pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/europa.svg"})
+            pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/europa.svg", "markedCont": "Europe"})
         }
     }
     MouseArea {
@@ -58,7 +58,7 @@ Page {
         height: worldImage.height - europeArea.height
         onClicked: {
             console.log("Africa clicked")
-            pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/afrika.svg"})
+            pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/afrika.svg", "markedCont": "Africa"})
         }
     }
     MouseArea {
@@ -69,7 +69,7 @@ Page {
         height: worldImage.height * 0.67
         onClicked: {
             console.log("Asia clicked")
-            pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/asien.svg"})
+            pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/asien.svg", "markedCont": "Asia"})
         }
     }
     MouseArea {
@@ -80,7 +80,7 @@ Page {
         height: worldImage.height - asiaArea.height
         onClicked: {
             console.log("Australia clicked")
-            pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/australien.svg"})
+            pageStack.push(Qt.resolvedUrl("dMap.qml"), {"mappe" : "img/australien.svg", "markedCont": "Australia"})
         }
     }
     Toolbar {

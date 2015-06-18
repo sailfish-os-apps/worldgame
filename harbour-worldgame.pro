@@ -27,7 +27,9 @@ OTHER_FILES += qml/harbour-worldgame.qml \
     qml/pages/AboutPage.qml \
     qml/pages/worldmap.qml \
     qml/pages/dMap.qml \
-    qml/pages/Toolbar.qml
+    qml/pages/Toolbar.qml \
+    dataBase.js \
+    qml/pages/dataBase.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line
